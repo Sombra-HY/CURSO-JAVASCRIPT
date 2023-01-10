@@ -1,8 +1,12 @@
-
-// IDEIA: Carrinho de compras com POO, onde a o carrinho é 
-// independendte do produto, no caso o produto sera adicionado no carrinho
-// e depois sera mostrado o valor/ total do valor...
-
+function Produto(nome, codigo, valoru){
+    let produto = {
+        nome, codigo, valoru, _quanti : 1,
+        setquanti(quanti){
+            this._quanti = quanti;
+        }
+    }
+    return produto;
+}
 
 function Carrinho(){
     let __carrinho = {
@@ -40,17 +44,6 @@ function Carrinho(){
     return __carrinho;
 }
 
-// produto para ser usado no carrinho
-function Produto(nome, codigo, valoru){
-    let produto = {
-        nome, codigo, valoru, _quanti : 1,
-        setquanti(quanti){
-            this._quanti = quanti;
-        }
-    }
-    return produto;
-}
-
 
 function meuEscopo () {
     let cliente = Carrinho()
@@ -70,7 +63,7 @@ function meuEscopo () {
         cliente.pushcesta(Produto(nome, codi, prec));
 
         //atualizando a cesta no html (LISTA DE COMPRAS)
-        resut.innerHTML = cliente.mostrarcesta();
+        resut.innerHTML +=`<p>${cliente.mostrarcesta()}</p>`;
 
         //atualizacao do total da compra
         a.innerHTML = cliente.totaldacompra();
