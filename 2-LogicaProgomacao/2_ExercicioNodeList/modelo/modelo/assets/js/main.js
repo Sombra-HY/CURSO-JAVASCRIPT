@@ -1,7 +1,7 @@
 
 function mudacor(){
     let parag = document.querySelector(".container");
-    let elementos = document.querySelectorAll('p');
+    let elementos = parag.querySelectorAll('p');
 
     let Stylebody = getComputedStyle(document.body);
     let cor = Stylebody.backgroundColor;
