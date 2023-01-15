@@ -11,8 +11,8 @@ class Tempo{
     }
     iniciar(){
         this.intervalo = setInterval(() => {
-            
-            // Update time
+        // Update time
+
             this.segundos ++;
             let [hor, min, sec] = this.secondstotime(this.segundos);
             this.documento.textContent = `${hor}:${min}:${sec}`;
