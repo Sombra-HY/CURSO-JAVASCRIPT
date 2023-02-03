@@ -1,0 +1,10 @@
+BABEL
+
+Existe navegadores que nao tem suporte a todas FUNCOES
+do javasxript, por isso, existe um 'tradutor' chamado Babel 
+onde é escrito as funcoes e traduzido para uma versao que é compativel com 
+todos navegadores.É possivel saber se algum navegador e compativel com um 
+codigo/ metodo/ tag  atraves do site:
+
+https://caniuse.com/?search=for
+
